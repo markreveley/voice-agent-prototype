@@ -8,7 +8,7 @@
 
 **doc-02 Keep reading cheap for agents.** Every file an agent opens is a separate tool call. Group related material so a fresh agent can onboard in a few reads, rather than splitting it into many tiny files.
 
-**doc-03 Keep every change small enough to audit.** A change should touch as little as possible, so its checkpoint and diff stay small and a verifier can confirm it by content.
+**doc-03 Keep every change small enough to audit.** A change should touch as little as possible, so its commit diff stays small and a verifier can confirm it by content.
 
 **doc-04 Give things IDs that never change.** Lists get reordered and Google Docs restarts list numbering, so anything other docs refer to gets a fixed ID that survives reordering.
 

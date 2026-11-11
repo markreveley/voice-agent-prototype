@@ -10,4 +10,4 @@
 
 ## Changing this policy
 
-New rules go here with the next unused ID (evid-03, ...). Copy this doc into your run's checkpoints folder before editing it.
+New rules go here with the next unused ID (evid-03, ...). Edit this file in the repo and commit; git keeps the old version.

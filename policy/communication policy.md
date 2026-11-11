@@ -24,6 +24,8 @@ comm-09 (serves doc-01) Name sections. When you refer to part of a doc, say the 
 
 comm-10 (serves doc-01) Name rules by category and ID. When you mention a rule, say its category, the word rule, its ID, then "which is" and its title. Example: communication rule comm-09, which is name sections. Doctrine works the same way: doctrine principle doc-02, which is keep reading cheap for agents.
 
+**comm-11 (serves doc-01) Ask for text when git is needed.** Voice turns can read the Drive mirror but cannot reach git or the shell. When the next step needs either (clone, run, commit, push or sync), say so in one sentence and ask Mark to type his next message.
+
 ## Changing this policy
 
-New rules from Mark go here with the next unused ID (comm-11, ...). Copy this doc into your run's checkpoints folder before editing it.
+New rules from Mark go here with the next unused ID (comm-12, ...). Edit this file in the repo and commit; git keeps the old version.
