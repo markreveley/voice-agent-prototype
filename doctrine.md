@@ -15,3 +15,5 @@
 **doc-05 Separate what from why.** Policy holds the checkable rules, doctrine holds the reasons, and run summaries hold the history. Each can then change without disturbing the others.
 
 **doc-06 Prefer clean removal over leftovers.** When something moves or is retired, delete the old copy and fix the links, rather than leaving stubs. An agent that hits a dead link reports it to Mark.
+
+**doc-07 Keep private data out of public repos.** This repo is public. Mark's personal details (family, dates, to-dos, calendar entries) never go in it, including in examples, tool notes and test records; use neutral examples instead. Private projects get their own private repos. Added 2026-11-11.

@@ -22,21 +22,21 @@ Build nothing yet. Use what the chat app already provides as stand-ins for each 
 
 The hardest questions in a voice coding agent are about the experience, not the infrastructure:
 
-- How to describe code aloud instead of reading it.
-- How to review and approve a change you cannot see.
-- What the agent should say after running code or making an edit.
+- How to describe code aloud instead of reading it.  
+- How to review and approve a change you cannot see.  
+- What the agent should say after running code or making an edit.  
 - How to navigate and refer to code by voice.
 
 What we learn carries directly into the real build described in "Voice Coding Agent Prototype."
 
 ## Possibilities
 
-- A working voice-driven dev environment today, with no infrastructure built.
-- UX research for the real product before investing in the full stack.
-- Prototyping harness components in Python, such as a tool loop, a code-to-speech summarizer, or a diff explainer.
-- A persistent code library in the git repo that Claude clones at the start of each chat, mirrored to Drive for voice turns.
+- A working voice-driven dev environment today, with no infrastructure built.  
+- UX research for the real product before investing in the full stack.  
+- Prototyping harness components in Python, such as a tool loop, a code-to-speech summarizer, or a diff explainer.  
+- A persistent code library in the git repo, with a Drive working copy that voice turns can read and edit.
 
 ## Next steps
 
-- Try a real, multi-file program to stress the approach.
+- Try a real, multi-file program to stress the approach.  
 - Keep notes on what works in voice UX and feed them back into the main prototype doc.

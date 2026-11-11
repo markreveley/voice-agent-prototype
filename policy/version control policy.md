@@ -10,15 +10,15 @@
 
 **vc-03 (retired) Google version history is the last resort.** Retired in run 04: the Drive folder is now a mirror, so its version history is not needed.
 
-**vc-04 (serves doc-03) Git is the only source of truth.** The repo github.com/markreveley/voice-agent-prototype holds every project file. Change files only by committing to its main branch. Never edit the Drive mirror: it is overwritten on every sync.
+**vc-04 (serves doc-03) Git is the record; Drive is the working copy.** The repo github.com/markreveley/voice-agent-prototype holds every project file. The Drive folder (Agents, then voice coding agent) is its working copy: edit there, by voice or text, then commit and push. Drive is the only place edits happen; never change the repo any other way. Changed 2026-11-11.
 
-**vc-05 (serves doc-03) One change per commit.** Each commit makes one change, with a message that says what changed and why.
+**vc-05 (serves doc-03) One commit per commit command. Each commit holds everything changed since the last one, with a message that lists every change and why, and every next.md item it closes with its evidence, so a verifier can check each listed change against the diff. Changed 2026-11-11.**
 
-**vc-06 (serves doc-04) Prefix every commit with its thread.** Commit messages start with "run NN:" in a development run and "verify NN:" in a verification thread, so a verifier can list a run's commits with git log --grep.
+**vc-06 (serves doc-04) Prefix every commit with its thread.** Commit messages start with "run NN:" in a development run and "verify NN:" in a verification thread, so a verifier can list a run's commits with git log \--grep.
 
 **vc-07 (serves doc-03) Push early, and always before the session ends.** The sandbox resets between chats, so a commit that was not pushed is lost.
 
-**vc-08 (serves doc-01) Sync the Drive mirror after every push.** Follow sync.md (skills folder), so voice turns, which can reach Drive but not git, read the current state.
+**vc-08 (retired) Sync the Drive mirror after every push.** Retired 2026-11-11: Drive is now the working copy, and changes move between Drive and git with the pull and commit skills (skills folder).
 
 **vc-09 (serves doc-04) Cite commits by hash, not by tag.** Pushing tags from the sandbox is refused (test record t09), so summaries, claims and reports name commits by their short hash.
 

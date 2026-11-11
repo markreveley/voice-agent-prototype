@@ -6,15 +6,15 @@
 
 **name-01 (serves doc-01) Lowercase titles.** All file and folder names are lowercase, because text to speech spells capitalized names out letter by letter.
 
-**name-02 (serves doc-01) Suffixes show the type.** Text files end in .md, including test records and run summaries. Code keeps its own suffix (e.g. docs_io.py). Drive titles carry the same suffix.
+**name-02 (serves doc-01) Suffixes show the type.** Text files end in .md, including test records and run summaries. Code keeps its own suffix (e.g. docs\_io.py). Drive titles carry the same suffix.
 
 **name-03 (retired) Checkpoint titles.** Retired in run 04: checkpoints were replaced by git commits.
 
 **name-04 (retired) Snapshot titles.** Retired in run 04: end snapshots were replaced by git commits.
 
-**name-05 (no doctrine yet) Confirm the parent.** Never search Drive by title alone and trust the first hit: confirm the file's parent is the folder you expect (root, skills, policy, tested or agent-runs). The archive folder holds old copies with the same titles.
+**name-05 (no doctrine yet) Confirm the parent.** Never search Drive by title alone and trust the first hit: confirm the file's parent is the folder you expect (root, agent, skills, policy or tested). Old copies with the same titles can sit in the Drive trash or in other projects, so a title match is not enough.
 
-**name-06 (serves doc-01) Same path in the repo and in Drive.** Every file's path from the repo root matches its path in the Drive mirror, so one path said aloud finds the file in both.
+**name-06 (serves doc-01) Same path in the repo and in Drive.** Every file's path from the repo root matches its path in the Drive working copy (Agents, then voice coding agent), so one path said aloud finds the file in both.
 
 ## Changing this policy
 
