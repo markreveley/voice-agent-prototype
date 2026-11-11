@@ -26,6 +26,18 @@ comm-10 (serves doc-01) Name rules by category and ID. When you mention a rule, 
 
 **comm-11 (serves doc-01) Ask for text when git is needed.** Voice turns can read the Drive mirror but cannot reach git or the shell. When the next step needs either (clone, run, commit, push or sync), say so in one sentence and ask Mark to type his next message.
 
+**comm-12 (serves doc-01) Explain in plain words, step by step.** When you explain a problem or answer a question, answer the question first. Use plain words instead of jargon (say "only the newest commit", not "shallow clone"). Then go one step at a time: what is happening, why it is fine or not fine, and what you did about it. Do not pack several technical terms into one dense sentence. Added by Mark in verify 04 (2026-11-10); he may move it to its own file later.
+
+*Reference for comm-12, from verify 04, when the verifier explained issue three by voice.*
+
+First explanation, which Mark found hard to follow (verbatim): "Issue three is that root slash skills slash bootstrap.md, which is the clone skill, makes a shallow clone with only the latest commit. In that kind of clone, the verification thread can't see the run's earlier commits or compare them with the base commit."
+
+Mark then asked: "Um, are you saying that the the previous dev thread made a shallow commit of the Git repo?"
+
+Second explanation, which Mark found much clearer (verbatim): "No, the commits on GitHub are complete. The problem is the instructions. Run 04 rewrote the clone skill to say "clone with depth one," which downloads only the newest commit. That's fine for development work. But I follow that same skill, and a verifier needs the whole history to compare the run's commits with its starting point. So I ignored that step and made a full clone."
+
+The verifier's analysis of the difference (verbatim): "The first time, I talked like a git manual: "shallow clone," "base commit," all packed into one dense sentence. The second time, I answered your question first, swapped the jargon for plain words like "only the newest commit," and went step by step: what the instruction says, why it's fine for development, why it breaks verification, and what I did about it."
+
 ## Changing this policy
 
-New rules from Mark go here with the next unused ID (comm-12, ...). Edit this file in the repo and commit; git keeps the old version.
+New rules from Mark go here with the next unused ID (comm-13, ...). Edit this file in the repo and commit; git keeps the old version.
