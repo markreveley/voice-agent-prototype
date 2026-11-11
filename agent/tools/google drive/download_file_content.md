@@ -18,4 +18,5 @@ fileId and exportMimeType text/plain for Google Docs. The result comes back base
   3. extra blank lines before function definitions.  
 - None of these breaks Python. decode\_export in docs\_io.py (voice coding agent root) strips the first two, and the cleaned file ran. (voice coding agent: t04, t07.)  
 - Downloading a past revision returns "not yet supported". (voice coding agent: t05.)  
-- Use this, not read\_file\_content, for anything that will be committed or run.
+- Use this, not read\_file\_content, for anything that will be committed or run.  
+- 2026-11-11: exportMimeType text/markdown works for prose docs and is what commit.md uses. The export is close to the original, with harmless backslash escapes and no final newline. A paragraph with no empty paragraph before it comes out joined to the one above. (voice coding agent: t10.)
