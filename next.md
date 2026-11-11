@@ -1,8 +1,8 @@
 # next
 
-*Updated 2026-11-10 by run 04. Open work only, in order. Each item is tagged (agent) or (operator); (operator) means Mark must act before work can go on. When an item is done, remove it here and add a line to history.md (root). Verification is never listed: the verify thread finds its own run. Every agent follows the files in the policy folder in every reply.*
+*Updated 2026-11-10 by run 04 at slash end. Open work only, in order. Each item is tagged (agent) or (operator); (operator) means Mark must act before work can go on. When an item is done, remove it here and add a line to history.md (root). Verification is never listed: the verify thread finds its own run. Every agent follows the files in the policy folder in every reply.*
 
-Previous run: run 03 - 2026-11-10 - verification fixes, policy, doctrine and history. It predates git, so its summary is in Drive only: root slash archive slash agent-runs slash run 03 - 2026-11-10 - verification fixes, policy, doctrine and history slash summary.md. Run 04 (git as the source of truth) is in progress, and its slash end replaces this pointer.
+Previous run: run 04 - 2026-11-10 - git as the source of truth. Summary: root slash agent-runs slash run 04 - 2026-11-10 - git as the source of truth slash summary.md. Runs 01 to 03 predate git; their records are in the Drive archive folder only.
 
 1. **(operator)** Decide what real, multi-file program to build as the stress test.
 2. **(agent)** Build that program in the repo, to stress the clone, run, commit, push and sync workflow and the switching between voice and text turns.
