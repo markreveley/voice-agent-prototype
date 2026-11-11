@@ -70,6 +70,7 @@ git diff --stat f5cf059 1674906 lists 23 files, and every one is covered by c03 
 1. Created this folder (verify 04 - 2026-11-10) and this report.
 2. next.md: added one (agent) item at the top listing the fixes below, under step 7's exception.
 3. history.md: added one line for this verification.
+4. communication policy.md (policy folder): added communication rule comm-12, which is explain in plain words, step by step, with a verbatim reference example, and moved the next ID to comm-13. A verification thread normally changes no policy; Mark asked for this by voice after the report was first written, when he found the verifier's second explanation of P1 much clearer than its first. It is outside step 7's next.md exception and is recorded here so the next run can see it.
 
 Each is its own commit with the prefix "verify 04:". Then pushed and synced the Drive mirror (sync.md).
 
