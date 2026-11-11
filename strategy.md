@@ -12,7 +12,7 @@ Claude Code has native GitHub and sandbox access, but only the Claude chat app o
 
 ## The tradeoff we accept
 
-We give up native GitHub access and a persistent dev machine in exchange for real two-way voice today.
+We give up a persistent dev machine in exchange for real two-way voice today. We first thought we had also given up GitHub, but text turns in the same chat can clone and push (test record t09). So the repo is the store, and Mark types when a step needs git.
 
 ## The core idea
 
@@ -34,7 +34,7 @@ What we learn carries directly into the real build described in "Voice Coding Ag
 - A working voice-driven dev environment today, with no infrastructure built.
 - UX research for the real product before investing in the full stack.
 - Prototyping harness components in Python, such as a tool loop, a code-to-speech summarizer, or a diff explainer.
-- A persistent code library in Drive that Claude loads at the start of each chat.
+- A persistent code library in the git repo that Claude clones at the start of each chat, mirrored to Drive for voice turns.
 
 ## Next steps
 
