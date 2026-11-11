@@ -1,25 +1,21 @@
-skill: /bootstrap
+# skill: /bootstrap
 
-Trigger: Mark says "slash bootstrap", or another skill (start-dev) calls it, or the sandbox has lost /tmp/docs_io.py mid-session. Moved from agents.md in run 03 (2026-11-10).
+**Trigger:** Mark says "slash bootstrap", or another skill (start-dev, verify) calls it, or the clone is missing mid-session. Rewritten in run 04 (2026-11-10): it used to load docs_io.py from Drive; it now clones the git repo.
 
-What it does: loads docs_io.py, the helper that moves code between Google Docs and the sandbox. Do this before any code work.
+**What it does:** puts a working, pushable clone of the repo in the sandbox. Do this before any other work.
 
-Steps
+## Steps
 
-1. Find docs_io.py in root (confirm its parent is root) and download it with download_file_content and exportMimeType text/plain. It returns base64.
-2. In the sandbox, paste the base64 into this and run it:
+1. Check that you are in a text turn: you need a shell and git. In a voice turn, ask Mark to type his next message (communication rule comm-11).
+2. Attach the repo with write access: call add_repo with owner markreveley, repo voice-agent-prototype and access push. If no such tool exists, a read-only clone still works (step 3) but you cannot push: tell Mark.
+3. Clone it to the path the tool gives (usually /home/claude/voice-agent-prototype): git clone --depth 1 https://github.com/markreveley/voice-agent-prototype PATH. Allow up to ten minutes.
+4. Check the clone: git log --oneline -3 shows recent commits, and git status is clean.
+5. Write down the base commit (git rev-parse --short HEAD). A development run records it in summary.md; a verification thread compares against it.
+6. Read the rest of the project from the clone, not from Drive: the clone is the current state, and the mirror may lag.
 
-   import base64, importlib.util
-   b = "<paste base64 here>"
-   src = base64.b64decode(b).decode("utf-8-sig").replace("\r\n", "\n")
-   open("/tmp/docs_io.py", "w").write(src)
-   spec = importlib.util.spec_from_file_location("docs_io", "/tmp/docs_io.py")
-   docs_io = importlib.util.module_from_spec(spec); spec.loader.exec_module(docs_io)
+## Notes
 
-3. From then on use docs_io.decode_export(b64) to load any program (file format rule fmt-03).
-4. Installing packages: pip install --break-system-packages NAME
-
-Notes
-
-- A new chat starts with an empty sandbox (test record t08), so run this in every new development chat.
-- Status: tested in run 02 (t08) and run 03, as part of start-dev.
+- Push a branch with git push origin main. Pushing tags is refused (test record t09).
+- Install packages with pip install --break-system-packages NAME (test record t06).
+- docs_io.py is no longer needed to load code; it stays in the repo as a test program.
+- Status: steps 2 to 4 tested in run 04 (t09).
