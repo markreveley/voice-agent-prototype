@@ -6,7 +6,7 @@
 
 **ver-01 (serves doc-01) Independent verification.** A separate agent, in a fresh chat, checks each run's work. The development agent never verifies its own run. It still checks its own work as it goes, but that does not count as verification. Set by Mark in run 02 (2026-11-09); the self-check restored in run 07 (2026-11-11).
 
-**ver-02 (serves doc-01) Every run has a type.** There are two types of run. A fixes run makes the fixes listed in the newest verification report, and nothing else. A dev run does new work. The type is in the run folder's name: run NN \- date \- type \- short label.
+**ver-02 (serves doc-01) Every run has a type.** There are two types of run. A fixes run makes the fixes listed in the newest verification report, and nothing else. Ideas for new work that come up during a fixes run go in next.md, for a later dev run. A dev run does new work. The type is in the run folder's name: run NN \- date \- type \- short label. Changed 2026-11-11 (run 08).
 
 **ver-03 (serves doc-03) Every run is verified before the next one starts.** When a run ends, a verification thread checks it and writes a report, and the next run starts only after that. If the report lists fixes, the next run is a fixes run (ver-02), and new work waits for a dev run after it. If the report lists no fixes, the next run is a dev run. A fixes run is verified like any other run, so its fixes are checked before more work builds on them. Changed 2026-11-11 (run 07).
 
