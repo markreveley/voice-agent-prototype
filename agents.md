@@ -25,12 +25,12 @@ When Mark says "slash" and a name, open the file of that name in the skills fold
 
 ## verification
 
-Every run is audited afterward by a separate verification thread: see verification protocol.md (root). If you were opened to verify a run, follow that file and the verify skill instead of the development steps.
+Every run is audited afterward by a separate verification thread: its rules are in verification policy.md (policy folder) and its steps in verify.md (skills folder). If you were opened to verify, follow the verify skill instead of the development steps.
 
 ## read in this order
 
 1. next.md \- the ordered list of open actions, each tagged (agent) or (operator). Do the (agent) items that apply to you and mention the (operator) items to Mark. When an item is done, remove it from next.md and name it in the commit message, with its evidence (version control rule vc-05). Git history is the record of finished work. next.md begins with a pointer to the previous run's summary: read that too.  
-2. the previous run's verification report (report.md in its verify folder, in Agents slash runs), if it exists.  
+2. the newest verification report (report.md in a verify folder, in Agents slash runs).  
 3. strategy.md \- why.  
 4. architecture.md \- how.  
 5. test findings.md \- claims, each cited to a record in tested.
@@ -46,6 +46,6 @@ The repo root and the Drive root have the same layout (naming rule name-06):
 - skills: one file per voice command.  
 - agent: the assistant's environment (agents.md) and notes on each connected tool (tools folder). Check a tool's notes before using it, and add what you learn.  
 - tested: one record per test run (t01, t02, ...): date, what was run, raw output, observations, what was not tested.  
-- Run records are not in this project: they live in Agents slash runs, one folder per run (summary.md, and later a "verify NN \- date" folder with report.md), because a run can touch several projects.
+- Run records are not in this project: they live in Agents slash runs, one folder per run, named with its type, fixes or dev (summary.md, and in the newest run a verification covers, a "verify NN \- date" folder with report.md), because a run can touch several projects.
 
 Runs 01 to 03 predate git.

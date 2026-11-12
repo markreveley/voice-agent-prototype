@@ -20,7 +20,7 @@
 
 **comm-08 (retired) Lowercase titles.** Retired in run 03: moved to naming rules name-01 and name-02 (naming policy.md).
 
-**comm-09 (serves doc-01) Name sections.** When you refer to part of a doc, say the word section, then its name, then which doc it is in. Example: section verification thread steps, in root slash verification protocol.md.
+**comm-09 (serves doc-01) Name sections.** When you refer to part of a doc, say the word section, then its name, then which doc it is in. Example: section steps, in root slash skills slash verify.md.
 
 **comm-10 (serves doc-01) Name rules by category and ID.** When you mention a rule, say its category, the word rule, its ID, then "which is" and its title. Example: communication rule comm-09, which is name sections. Doctrine works the same way: doctrine principle doc-02, which is keep reading cheap for agents.
 
