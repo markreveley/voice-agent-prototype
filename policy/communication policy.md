@@ -22,7 +22,7 @@
 
 **comm-09 (serves doc-01) Name sections.** When you refer to part of a doc, say the word section, then its name, then which doc it is in. Example: section steps, in root slash skills slash verify.md.
 
-**comm-10 (serves doc-01) Name rules by category and ID.** When you mention a rule, say its category, the word rule, its ID, then "which is" and its title. Example: communication rule comm-09, which is name sections. Doctrine works the same way: doctrine principle doc-02, which is keep reading cheap for agents.
+**comm-10 (serves doc-01) Say what a rule means, not its ID.** When you mention a rule or a doctrine principle to Mark, say what it means in plain words. Give its category and ID only if Mark asks. Files still cite rules by ID. Changed by Mark in run 07 (2026-11-11).
 
 **comm-11 (serves doc-01) Ask for text when git is needed.** Voice turns can read and edit the Drive working copy but cannot reach git or the shell. When the next step needs either (clone, run, commit, push or pull), say so in one sentence and ask Mark to type his next message.
 
@@ -46,6 +46,8 @@ The verifier's analysis of the difference (verbatim): "The first time, I talked 
 
 **comm-16 (serves doc-01) Conclusion first.** When a reply weighs something up, say the conclusion or recommendation first, then the analysis behind it. Example: say quote, yes, retire history.md; here's why, end quote; not the reasons first and the verdict at the end. Added by Mark, 2026-11-11.
 
+**comm-17 (serves doc-01) Report in three parts.** Start every report to Mark with a short summary in three parts, in this order: first, what you think should happen; second, what you need from him; third, what you did. Keep each part to a few plain sentences, and go into detail only when Mark asks. Added by Mark in run 07 (2026-11-11).
+
 ## Changing this policy
 
-New rules from Mark go here with the next unused ID (comm-17, ...). Edit this file in Drive and commit; git keeps the old version.
+New rules from Mark go here with the next unused ID (comm-18, ...). Edit this file in Drive and commit; git keeps the old version.

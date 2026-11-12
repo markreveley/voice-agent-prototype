@@ -4,6 +4,18 @@
 
 A prototype of a strictly voice-driven coding agent. The operator (Mark) talks to an agent in the Claude chat app, mostly in voice mode, and types when a step needs git.
 
+## how work is done
+
+Every run follows these steps. When you explain how work is done to Mark, use these words.
+
+1. A development chat does a run, then ends it.  
+2. Mark opens a new chat to check that run. It writes a report with a list of fixes.  
+3. If there are fixes, the next run makes only those fixes.  
+4. That run gets checked too, the same way.  
+5. New work starts only after a report comes back with no fixes.
+
+The detailed rules are in verification policy.md (policy folder), and the checking steps are in verify.md (skills folder). If you were opened to check a run, follow the verify skill instead of the development steps.
+
 ## where the project lives
 
 - **The git repo is the record:** github.com/markreveley/voice-agent-prototype, branch main. Every project file lives there, and every change is a commit (version control rule vc-04).  
@@ -22,10 +34,6 @@ A prototype of a strictly voice-driven coding agent. The operator (Mark) talks t
 ## skills
 
 When Mark says "slash" and a name, open the file of that name in the skills folder and follow it. If no skill has that name, say so. Step-by-step procedures (starting a development session, cloning the repo, ending a session, verifying a run) live in the skills, not here, so they are read only when needed.
-
-## verification
-
-Every run is audited afterward by a separate verification thread: its rules are in verification policy.md (policy folder) and its steps in verify.md (skills folder). If you were opened to verify, follow the verify skill instead of the development steps.
 
 ## read in this order
 
