@@ -6,12 +6,12 @@
 
 ## Steps
 
-1. Write summary.md in your run folder in Agents slash runs (Drive only): a permanent record of the run with goal, base commit, what was done, decisions and why, files changed (including every change made outside the repo), tests run, mistakes and corrections, and open items.  
+1. Write summary.md in your run folder in Agents slash runs (Drive only): a permanent record of the run with goal, base commit, what was done, decisions and why, files changed (including every change made outside the repo), tests run, mistakes and corrections, and open items. For a fixes run, also say whether it did anything the report did not ask for (verification rule ver-03).  
 2. Check that every change made this run is either listed in a commit message or in summary.md, since those are the claims a verifier checks (verification rule ver-05, policy folder).  
 3. In next.md, tag every item (agent) or (operator) and list them in the order they should happen. Do not add a verification item: the verify thread finds its runs by itself (every run after the newest verify folder). Tag an item (operator) only when Mark must act before work can go on. next.md lists only open work, so the next session can pick up cold: remove every item closed this run from next.md, and name each one in the commit message with its evidence (version control rule vc-05). An item closed with no repo change goes in summary.md instead. Begin next.md with a pointer to your summary.md by path.  
 4. Make sure every change in the Drive working copy is committed: nothing may be left uncommitted at the end of a run.  
 5. Commit next.md and any remaining changes with commit.md (skills folder), as one commit with the prefix "run NN:" (version control rule vc-06) that lists every change (vc-05). Then push with push.md (skills folder).  
-6. Tell Mark by voice what was written, following communication policy.md (policy folder). After a dev run, remind him to start the verification thread; after a fixes run, the next dev run can start first.
+6. Tell Mark by voice what was written, following communication policy.md (policy folder). After a dev run, or a fixes run that did more than the report's fixes, remind him to start the verification thread (verification rule ver-03); after a fixes run that only made the fixes, the next dev run can start first.
 
 ## Notes
 

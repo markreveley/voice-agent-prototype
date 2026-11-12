@@ -6,9 +6,9 @@
 
 **ver-01 (serves doc-01) Independent verification.** A separate agent, in a fresh chat, checks each run's work. The development agent never verifies its own run; checking its own work within a run does not count as verification. Set by Mark in run 02 (2026-11-09).
 
-**ver-02 (serves doc-01) Every run has a type.** A run is a fixes run, which only makes the fixes from the newest verification report, or a dev run, which does new work. The type is in the run folder's name: run NN \- date \- type \- short label.
+**ver-02 (serves doc-01) Every run has a type.** A run is a fixes run, which makes the fixes from the newest verification report (any other change it makes falls under ver-03), or a dev run, which does new work. The type is in the run folder's name: run NN \- date \- type \- short label.
 
-**ver-03 (serves doc-03) Fixes come first, in their own run.** After a verification report, the next run is a fixes run, and new work starts in a new dev run. No verification is needed between a fixes run and the dev run after it.
+**ver-03 (serves doc-03) Fixes come first, in their own run.** After a verification report, the next run is a fixes run, and new work starts in a new dev run. A fixes run that only made the report's fixes needs no verification before the next dev run. A fixes run that did anything the report did not ask for, such as new or changed rules, skills or doctrine, is verified before the next dev run starts, because later runs depend on those changes. Changed 2026-11-11 (run 06).
 
 **ver-04 (serves doc-01) Verify every run since the last verification.** The runs to verify are every run folder in Agents slash runs numbered after the newest one that holds a verify folder with report.md. Mark never passes a run number, and next.md never mentions verification.
 
