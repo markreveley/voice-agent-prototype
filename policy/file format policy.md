@@ -14,4 +14,4 @@
 
 ## Changing this policy
 
-New rules go here with the next unused ID (fmt-05, ...). Edit this file in the repo and commit; git keeps the old version.
+New rules go here with the next unused ID (fmt-05, ...). Edit this file in Drive and commit; git keeps the old version.

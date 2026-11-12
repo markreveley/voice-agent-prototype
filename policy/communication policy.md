@@ -48,4 +48,4 @@ The verifier's analysis of the difference (verbatim): "The first time, I talked 
 
 ## Changing this policy
 
-New rules from Mark go here with the next unused ID (comm-17, ...). Edit this file in the repo and commit; git keeps the old version.
+New rules from Mark go here with the next unused ID (comm-17, ...). Edit this file in Drive and commit; git keeps the old version.

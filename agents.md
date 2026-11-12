@@ -46,6 +46,6 @@ The repo root and the Drive root have the same layout (naming rule name-06):
 - skills: one file per voice command.  
 - agent: the assistant's environment (agents.md) and notes on each connected tool (tools folder). Check a tool's notes before using it, and add what you learn.  
 - tested: one record per test run (t01, t02, ...): date, what was run, raw output, observations, what was not tested.  
-- Run records are not in this project: they live in Agents slash runs, one folder per run, named with its type, fixes or dev (summary.md, and in the newest run a verification covers, a "verify NN \- date" folder with report.md), because a run can touch several projects.
+- Run records are not in this project: they live in Agents slash runs, one folder per run, named with its type, fixes or dev (summary.md, and, once the run is verified, a "verify NN \- date" folder with report.md), because a run can touch several projects.
 
 Runs 01 to 03 predate git.

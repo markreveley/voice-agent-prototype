@@ -17,7 +17,7 @@
    - added: doc with no file, so write the file;  
    - deleted: file with no doc, so git rm it. Ignore differences that are only export noise (trailing blank lines, escaped characters that render the same). If unsure, show the diff to Mark in one sentence and ask.  
 5. Tell Mark the change list as one short numbered list (comm-02), by file path, and ask him to confirm before committing.  
-6. Commit everything as one commit. Message: "run NN:" (vc-06), then a one-line subject, then one line per change: the path and what changed and why (vc-05). Use Mark's message as the subject if he gave one. If git asks for an author identity, ask Mark for his name and email.  
+6. Commit everything as one commit. Message: "run NN:" (vc-06), then a one-line subject, then one line per change: the path and what changed and why (vc-05). Use Mark's message as the subject if he gave one. Don't describe the export (which docs were exported or skipped): list only what changed and why. If git asks for an author identity, ask Mark for his name and email.  
 7. Tell Mark it's committed, with the short hash, and that it isn't on GitHub until he says slash push.
 
 ## Notes
