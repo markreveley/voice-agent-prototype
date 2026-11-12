@@ -8,7 +8,7 @@
 
 1. If there is no clone in this chat, make one with pull.md steps 1 to 4\. Don't touch Drive.  
 2. Find the Drive working copy by name: the folder Agents, then voice coding agent, and list every doc in it and its subfolders. Confirm parents (naming rule name-05).  
-3. Export each doc exactly, never with read\_file\_content (it adds escapes; test record t02):  
+3. Export each changed doc exactly, never with read\_file\_content (it adds escapes; test record t02). Changed means Drive shows it modified later than ten minutes before the last commit (git log \-1 \--format=%cI), or it has no file in the clone; skip the rest (version control rule vc-10):  
    - **.md docs:** download\_file\_content with exportMimeType text/markdown.  
    - **Code (.py and others):** download\_file\_content with exportMimeType text/plain (file format rule fmt-04).  
    - Decode the base64, then clean it with decode\_export from docs\_io.py (root): it strips the byte order mark and turns Windows line endings into Unix ones (test record t04).  
@@ -23,4 +23,4 @@
 ## Notes
 
 - Markdown export from Google Docs may not match the original markdown byte for byte (list markers, escapes, blank lines). The first commit will show how noisy this is: record what you find as a test record.  
-- Status: not yet tested.
+- Status: tested in run 05 (test record t10).

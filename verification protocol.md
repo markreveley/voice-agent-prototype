@@ -15,9 +15,9 @@ The development agent never verifies its own run. Within a thread it should stil
 
 There is no separate claims file. The claims are:
 
-1. **Commit messages: each commit lists every change in it, by file path, one sentence each, with why (version control rule vc-05).**  
-2. **summary.md: names the run's base commit, and lists every change made outside the repo (Drive folders moved or trashed, files in other projects).**  
-3. **Checks: the verifier turns each listed change into concrete, testable statements and checks them against the diff.**
+1. **Commit messages:** each commit lists every change in it, by file path, one sentence each, with why (version control rule vc-05).  
+2. **summary.md:** names the run's base commit, and lists every change made outside the repo (Drive folders moved or trashed, files in other projects).  
+3. **Checks:** the verifier turns each listed change into concrete, testable statements and checks them against the diff.
 
 Changes made after wrap-up go in a new commit, and summary.md is extended to cover them.
 

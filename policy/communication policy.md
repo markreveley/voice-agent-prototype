@@ -36,7 +36,7 @@ Mark then asked: "Um, are you saying that the the previous dev thread made a sha
 
 Second explanation, which Mark found much clearer (verbatim): "No, the commits on GitHub are complete. The problem is the instructions. Run 04 rewrote the clone skill to say "clone with depth one," which downloads only the newest commit. That's fine for development work. But I follow that same skill, and a verifier needs the whole history to compare the run's commits with its starting point. So I ignored that step and made a full clone."
 
-The verifier's analysis of the difference (verbatim): "The first time, I talked like a git manual: "shallow clone," "base commit," all packed into one dense sentence. The second time, I answered your question first, swapped the jargon for plain words like "only the newest commit," and went step by step: what the instruction says, why it's fine for development, why it breaks verification, and what I did about it.
+The verifier's analysis of the difference (verbatim): "The first time, I talked like a git manual: "shallow clone," "base commit," all packed into one dense sentence. The second time, I answered your question first, swapped the jargon for plain words like "only the newest commit," and went step by step: what the instruction says, why it's fine for development, why it breaks verification, and what I did about it."
 
 **comm-13 (serves doc-01) One name per thing.** Call each file, folder and idea by its real name, the same way every time. Don't coin new labels for existing things (not "entry doc" or "rules doc" for an agents.md). If a new name is truly needed, say so and ask Mark first. Added by Mark, 2026-11-11.
 

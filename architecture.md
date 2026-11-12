@@ -18,11 +18,11 @@ Each layer of the planned architecture in "Voice Coding Agent Prototype" has a s
 
 ## Workflow
 
-1. **Edit: change files in the Drive working copy, by voice.**  
-2. **Run: in a text turn, clone the repo and run code, taking it from Drive by plain-text download (file format rule fmt-04).**  
-3. **Commit: copy the changed Drive files into the clone and commit them.**  
-4. **Push: push to main.**  
-5. **Pull: if the repo changed elsewhere, refresh Drive from it. Steps 3 to 5 are the commit, push and pull skills (skills folder).**  
+1. **Edit:** change files in the Drive working copy, by voice.  
+2. **Run:** in a text turn, clone the repo and run code, taking it from Drive by plain-text download (file format rule fmt-04).  
+3. **Commit:** copy the changed Drive files into the clone and commit them.  
+4. **Push:** push to main.  
+5. **Pull:** if the repo changed elsewhere, refresh Drive from it. Steps 3 to 5 are the commit, push and pull skills (skills folder).  
 6. **Report:** give a short spoken summary of what ran, what changed, and the result.
 
 ## Technical limitations

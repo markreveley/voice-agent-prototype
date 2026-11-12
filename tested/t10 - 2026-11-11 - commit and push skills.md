@@ -17,7 +17,7 @@
 - Step 2: 52 items in one call. The result (about 54,000 characters) was too large to show and was saved to a file, then parsed in Python.  
 - Step 3: 34 docs exported, 4 exported again after the fixes. Each export returns the doc as base64 in the tool result, and the agent has to copy that text by hand into a shell command to write the file.  
 - Step 3: 12 docs were not exported, because Drive showed them unedited since the last commit (modifiedTime before the commit time). One of them, policy/evidence policy.md, was exported as a spot check: identical except for the missing final newline.  
-- Step 4: 40 files staged: 15 changed, 18 added, 8 deleted (counting the 4 run 04 records). 47 lines differed only by export noise.  
+- Step 4: 40 files staged: 15 changed, 17 added, 8 deleted (counting the 4 run 04 records). 47 lines differed only by export noise.  
 - Step 6: commit 119ab38. git fetch showed 0 commits behind. Push: "308c43a..119ab38 main \-\> main"; HEAD equalled origin/main.
 
 ## Observations

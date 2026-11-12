@@ -7,9 +7,9 @@ A prototype of a strictly voice-driven coding agent. The operator (Mark) talks t
 ## where the project lives
 
 - **The git repo is the record:** github.com/markreveley/voice-agent-prototype, branch main. Every project file lives there, and every change is a commit (version control rule vc-04).  
-- **The Drive folder (Agents, then voice coding agent) is the working copy of the repo. Edit there, by voice or text, then commit and push in a text turn. Drive is the only place edits happen (version control rule vc-04). The pull, commit and push skills (skills folder) move changes between Drive and the repo. The repo is public: keep personal data out (doctrine principle doc-07).**  
+- **The Drive folder (Agents, then voice coding agent) is the working copy of the repo.** Edit there, by voice or text, then commit and push in a text turn. Drive is the only place edits happen (version control rule vc-04). The pull, commit and push skills (skills folder) move changes between Drive and the repo. The repo is public: keep personal data out (doctrine principle doc-07).  
 - **Voice turns and text turns have different tools.** In a voice turn you can read and edit Drive but you have no shell or git. In a text turn you have a shell and git: clone the repo to run code, commit and push, but make edits in Drive, not in the clone. When the next step needs git, ask Mark to type (communication rule comm-11).  
-- **To start work, read from Drive; no clone is needed for voice work. When a step needs git, clone in a text turn with pull.md steps 1 to 4 (skills folder), which make a full clone. The sandbox starts empty in every new chat (test record t08).**
+- **To start work, read from Drive; no clone is needed for voice work.** When a step needs git, clone in a text turn with pull.md steps 1 to 4 (skills folder), which make a full clone. The sandbox starts empty in every new chat (test record t08).
 
 ## rules and principles
 

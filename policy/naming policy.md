@@ -4,7 +4,7 @@
 
 ## Rules
 
-**name-01 (serves doc-01) Lowercase titles.** All file and folder names are lowercase, because text to speech spells capitalized names out letter by letter.
+**name-01 (serves doc-01) Lowercase titles.** All file and folder names in this repo are lowercase, because text to speech spells capitalized names out letter by letter. Names outside the repo, such as the Agents and Life folders, are not covered. Changed 2026-11-11.
 
 **name-02 (serves doc-01) Suffixes show the type.** Text files end in .md, including test records and run summaries. Code keeps its own suffix (e.g. docs\_io.py). Drive titles carry the same suffix.
 

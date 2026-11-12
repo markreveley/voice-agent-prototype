@@ -17,4 +17,4 @@
 - No Drive step is needed after a push: the pushed commits came from Drive.  
 - Pushing tags is refused, so commits are cited by hash (version control rule vc-09, test record t09).  
 - Push before the chat ends: the sandbox resets between chats (vc-07).  
-- Status: steps 3 and 4 tested in run 04 (t09). Not yet tested as a skill.
+- Status: tested as a skill in run 05 (test record t10). Not yet tested: what happens when GitHub has newer commits (step 2).
